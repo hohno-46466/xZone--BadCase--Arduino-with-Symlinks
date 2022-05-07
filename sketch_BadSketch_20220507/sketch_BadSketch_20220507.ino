@@ -1,6 +1,6 @@
 #include "Arduino.h"
-#include "../common/dir1/file1.h"
-#include "../common/dir2/file2.h"
+#include "./file1.h"
+#include "./file2.h"
 
 void setup() {
   Serial.begin(57600);
