@@ -12,3 +12,5 @@ Bad case of Arduino sketche with symbolic links
      
      0 directories, 6 files (Sun May  8 02:32:12 JST 2022)
 
+
+See also README-01.txt
