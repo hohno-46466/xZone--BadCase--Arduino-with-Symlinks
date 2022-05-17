@@ -27,14 +27,12 @@ See also ./sketch_BadSketch_20220507/README-01.txt
 
 ### これは何？
 
-上記のような構成のディレクトリを git clone（など）で作り，sketch_BadSketch_20220507 にある sketch_BadSketch_20220507.ino を Arduino IDE でビルドすることを考える．なお，sketch_BadSketch_20220507.ino 内では file1.h と file2.h を #include している．
-このとき Linux やmac OS では問題なくビルドできるが Windows ではエラーになる．
+上記のような構成のディレクトリを git clone（など）で複製し，sketch_BadSketch_20220507 にある sketch_BadSketch_20220507.ino を Arduino IDE でビルドすることを考える．なお，sketch_BadSketch_20220507.ino 内では file1.h と file2.h を #include している．
+このとき Linux やmac OS では問題なく当該スケッチを Arduino IDE でビルドできるし，Windows でもコマンドプロンプト上で TYPE コマンドを使うと問題なく表示される．しかし，Arduino IDE でビルドしようとするとエラーになる．
 
-これは，git で上記のディレクトリ構成を clone や pull すると sketch_BadSketch_20220507 内の file1.h と file2.h が SYMLINK ではなく JUNCTION　として作られるからだと思われる．
+これは，git コマンドで上記のディレクトリ構成を clone や pull すると sketch_BadSketch_20220507 内の file1.h と file2.h が SYMLINK ではなく JUNCTION　として作られるからだと思われる．
 
-上記のディレクトリにあるバッチファイル re-link.bat は，ディレクトリ内の JUNCTION を消去してシンボリックリンクを作り直す働きをする（これは WSL で動く別のシェルスクリプトで生成しているが詳細はここでは省略）
-
-このようにして JUNCTION を SYMLINK　に作り直せば Windows 上の Arduino IDE でも問題なくビルドできる
+なお，上記のディレクトリにあるバッチファイル re-link.bat は，ディレクトリ内の JUNCTION を消去してシンボリックリンクを作り直す働きをする（これは WSL で動く別のシェルスクリプトで生成しているが詳細はここでは省略）．このバッチファイルを使って JUNCTION を SYMLINK　に作り直せば Windows 上の Arduino IDE でも問題なくビルドできる
 
 こうしてシンボリックリンクを作り直した状態で git push するとリポジトリ上のファイルも更新されるが，これを Linux や macOS で pull した場合，特に問題なく POSIXシンボリックリンクとして生成される。
 
