@@ -20,7 +20,7 @@ Bad case of Arduino sketche with symbolic links
          ├──  re-link.bat
          └──  sketch_BadSketch_20220507.ino
      
-     4 directories, 10 files (Wed Jul 20 06:08:35 JST 2022)
+     4 directories, 10 files (Mon Aug  8 21:42:55 JST 2022)
 
 
 See also ./sketch_BadSketch_20220507/README-01.txt
@@ -35,7 +35,6 @@ See also ./sketch_BadSketch_20220507/README-01.txt
 なお，上記のディレクトリにあるバッチファイル re-link.bat は，ディレクトリ内の JUNCTION を消去してシンボリックリンクを作り直す働きをする（これは WSL で動く別のシェルスクリプトで生成しているが詳細はここでは省略）．このバッチファイルを使って JUNCTION を SYMLINK　に作り直せば Windows 上の Arduino IDE でも問題なくビルドできる
 
 こうしてシンボリックリンクを作り直した状態で git push するとリポジトリ上のファイルも更新されるが，これを Linux や macOS で pull した場合，特に問題なく POSIXシンボリックリンクとして生成される。
-
 
 Note: url = https://github.com/hohno-46466/xZone--BadCase--Arduino-with-Symlinks
 

@@ -1,29 +1,29 @@
-# xZone--BadCase--Arduino-with-Symlinks
+# GitHub/xZone--BadCase--Arduino-with-Symlinks
 
 Bad case of Arduino sketche with symbolic links
 
 ### ディレクトリ構成
 
     ./xZone--BadCase--Arduino-with-Symlinks
-     ├── README.md
-     ├── common
-     │   ├── dir1
-     │   │   └── file1.h
-     │   └── dir2
-     │       └── file2.h
-     └── sketch_BadSketch_20220507
-         ├── README-01.txt
-         ├── README.md
-         ├── file1.h -> ../common/dir1/file1.h
-         ├── file2.h -> ../common/dir2/file2.h
-         ├── re-link.bat
-         └── sketch_BadSketch_20220507.ino
+     ├──  README.md
+     ├──  README.md.old
+     ├──  common/
+     │   ├──  dir1/
+     │   │   └──  file1.h
+     │   └──  dir2/
+     │       └──  file2.h
+     └──  sketch_BadSketch_20220507/
+         ├──  README-01.txt
+         ├──  README.md
+         ├──  file1.h -> ../common/dir1/file1.h
+         ├──  file2.h -> ../common/dir2/file2.h
+         ├──  re-link.bat
+         └──  sketch_BadSketch_20220507.ino
      
-     4 directories, 9 files (Sun May  8 02:32:28 JST 2022)
+     4 directories, 10 files (Wed Jul 20 06:08:35 JST 2022)
 
 
 See also ./sketch_BadSketch_20220507/README-01.txt
-
 
 ### これは何？
 
@@ -36,3 +36,9 @@ See also ./sketch_BadSketch_20220507/README-01.txt
 
 こうしてシンボリックリンクを作り直した状態で git push するとリポジトリ上のファイルも更新されるが，これを Linux や macOS で pull した場合，特に問題なく POSIXシンボリックリンクとして生成される。
 
+
+Note: url = https://github.com/hohno-46466/xZone--BadCase--Arduino-with-Symlinks
+
+Note: url = git@github.com:hohno-46466/xZone--BadCase--Arduino-with-Symlinks.git
+
+-EOF-
