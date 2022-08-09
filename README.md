@@ -36,8 +36,8 @@ See also ./sketch_BadSketch_20220507/README-01.txt
 
 こうしてシンボリックリンクを作り直した状態で git push するとリポジトリ上のファイルも更新されるが，これを Linux や macOS で pull した場合，特に問題なく POSIXシンボリックリンクとして生成される。
 
-Note: url = https://github.com/hohno-46466/xZone--BadCase--Arduino-with-Symlinks
+Note: URL = https://github.com/hohno-46466/xZone--BadCase--Arduino-with-Symlinks
 
-Note: url = git@github.com:hohno-46466/xZone--BadCase--Arduino-with-Symlinks.git
+Note: URL = git@github.com:hohno-46466/xZone--BadCase--Arduino-with-Symlinks.git
 
 -EOF-
