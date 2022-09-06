@@ -20,7 +20,7 @@ Bad case of Arduino sketche with symbolic links
          ├──  re-link.bat
          └──  sketch_BadSketch_20220507.ino
      
-     4 directories, 10 files (Sat Sep  3 17:32:45 JST 2022)
+     4 directories, 10 files (Tue Sep  6 19:35:16 JST 2022)
 
 
 See also ./sketch_BadSketch_20220507/README-01.txt
