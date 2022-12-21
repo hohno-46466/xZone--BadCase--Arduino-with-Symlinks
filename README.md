@@ -4,7 +4,7 @@ Bad case of Arduino sketche with symbolic links
 
 ### ディレクトリ構成
 
-     ./xZone--BadCase--Arduino-with-Symlinks
+    ./xZone--BadCase--Arduino-with-Symlinks
      ├──  README.md
      ├──  README.md.old
      ├──  common/
@@ -20,7 +20,7 @@ Bad case of Arduino sketche with symbolic links
          ├──  re-link.bat
          └──  sketch_BadSketch_20220507.ino
      
-     4 directories, 10 files (Wed Dec 21 18:51:47 JST 2022)
+     4 directories, 10 files (Thu Dec 22 04:09:44 JST 2022)
 
 
 See also ./sketch_BadSketch_20220507/README-01.txt
